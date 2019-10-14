@@ -1,0 +1,99 @@
+@import "snips/_foundation.scss";
+
+@include foundation-everything;
+
+
+//Abstände nach Renard R5: 10, 16, 25, 40, 63, 100 
+// Schriftgrößen nach Renard R10: 10, 12.5, 16 ,20 , 25, 31.5, 40, 50, 63, 80, 100
+
+.menu li a:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
+body,
+html {
+    font-size: $bfs;
+    hyphens: auto; 
+}
+
+h1{
+    font-weight: bold;
+    font-size: rem-calc(25px);
+}
+
+h2{
+    margin-top: $bfs * 2;
+    font-size: rem-calc(20px);
+}
+
+@media screen and #{breakpoint(medium)} {
+    p, li, td, th{
+        font-size: $bfs * 1.25;
+    }
+
+    h1{
+        font-size: rem-calc(40px);
+    }
+    
+    h2{
+        font-size: rem-calc(31.5px);
+    }
+}
+
+
+
+h1, h2, h3, h4{
+    line-height: 110%;
+}
+
+li{
+    line-height: 140%;
+    margin-bottom: $bfs /2;
+}
+
+@media screen and #{breakpoint(medium)} {
+    .grid-container.fluid{
+        margin-left: $from-left;
+    }
+
+    .off-canvas-wrapper {
+        overflow: visible;
+    }
+    
+    .off-canvas-content {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    header, nav, footer {
+        flex-shrink: 0;
+    }
+    
+    main {
+        flex: 1 0 auto; /* Use 1 0 auto instead of just 1 for backwards compatibility with other browsers */
+    }
+}
+
+
+.grid-x{
+    margin-bottom: $bfs *2;
+}
+
+blockquote{
+    border-left: solid $mi-border-small $mi-pink;
+    padding: $bfs/2  $bfs;
+
+    > p{
+        margin-bottom: 0;
+    }
+}
+
+.MIcontentBlock{
+    margin-bottom: $bfs * 4;
+    
+    h1{
+	    margin-bottom: $bfs * 2;
+    }
+}

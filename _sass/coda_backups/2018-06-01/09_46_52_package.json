@@ -1,0 +1,33 @@
+{
+    "name": "mi-communicate-hugo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "hugo server --disableFastRender && gulp watch",
+        "babel": "npx babel gulpfile.babel.js --out-file gulpfile.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-register": "^6.26.0",
+        "del": "^3.0.0",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^4.1.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-hash": "^4.2.2",
+        "gulp-notify": "^3.0.0",
+        "gulp-plumber": "^1.1.0",
+        "gulp-postcss": "^6.0.22",
+        "gulp-purgecss": "^1.0.0",
+        "gulp-sass": "^4.0.1",
+        "gulp-sourcemaps": "^2.6.4"
+    },
+    "dependencies": {
+        "foundation-sites": "^6.4.4-rc1"
+    }
+}

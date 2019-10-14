@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>UI Sketching</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./_assets/custom-themes/medieninformatik-semantic.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/Vs.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<!-- .slide: data-background="#9313CE" -->
+<!-- .slide: class="welcome center" -->
+
+# Visualisierung
+Workshop im Rahmen des Moduls "Einführung in die Medieninformatik"
+
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: class="assignment center" -->
+
+## <i class='fa fa-pencil-alt' aria-hidden='true'></i> Fingerübung
+
+Nehmen Sie ein weißes DIN A4 Blatt und falten Sie es mittig über die lange Seite. Zeichnen Sie dann im oberen Teil ein einfaches, aber möglichst charakteristisches Portrait von sich. Nutzen Sie bitte einen mitteldicken Faserstift.
+
+Ergänzen Sie das Portrait um die folgenden Angaben:
+* Ihren Vornamen
+* zwei Ihrer guten Eigenschaften
+* zwei Ihrer schlechten Eigenschaften
+* einen Satz, warum Sie ein guter Medieninformatiker sind oder werden
+
+Für die Aufgabe haben Sie ** 10 Minuten ** Zeit. 
+
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: class="simple center" -->
+
+
+## <i class='fa fa-volume-up' aria-hidden='true'></i> Mission Statement // MI Bachelor
+
+Absolventen der Medieninformatik **analysieren**, **realisieren**, **betreiben** und **evaluieren informationstechnische Prozesse** und **Systeme** zur Gestaltung, Produktion, Bearbeitung, Distribution und Nutzung **medienbasierter Informationen**.
+
+Das Studium der Medieninformatik zielt somit im Kern auf die Vermittlung entsprechender Methoden, Techniken und Denkweisen der Informatik. **Absolvent\*innen** der Medieninformatik **arbeiten** dabei vorwiegend in **Teams** und müssen dort ihre erworbenen Kompetenzen einbringen können – hier ist **Interdisziplinarität** gefragt, erwünscht und gefordert. Auch darauf bereitet das Studium der Medieninformatik vor: es **vermittelt Sichtweisen** und Techniken aus verschiedenen Fachgebieten, von **Computergrafik** über **Mensch-Computer-Interaktion** bis **Videoproduktion**, von **Kommunikationsdesign** über **Programmentwicklung** bis **Marketing**.
+
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: class="assignment center" -->
+
+## <i class='fa fa-bullseye' aria-hidden='true'></i> Ziel des Workshops …
+
+… ist es, die Teilnehmer zu motivieren und ermächtigen **Stift und Papier** als hilfreiches, effizientes und sympathisches **Werkzeug im Entwurfsprozess** von Softwaresystemen zu nutzen.
+
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+
+## <i class='fa fa-eye' aria-hidden='true'></i> Visual Everything
+## <i class='fa fa-sitemap' aria-hidden='true'></i> Hierarchical Task Analysis
+## <i class='fa fa-paint-brush' aria-hidden='true'></i> Interface Sketching
+
+</script></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background-color="#000000" data-background-image="img/brain_monochrom.svg" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/pferde/p1.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/pferde/p2.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/pferde/p3.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/pferde/p4.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/pferde/p5.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/pferde/p6.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/pferde/p7.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/bildmachen.png" -->
+<!-- .slide: class="image center" -->
+
+Davon muss ich mir erst mal ein Bild machen!
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="assignment center" -->
+
+## Beispiel: Verwandtschaftliche Beziehungen
+
+Tom ist 42 Jahre alt und hat zwei Schwestern: Lea und Martha. Lea ist 40 und hat drei Kinder: Simon (12) und die Zwillinge Josuha und Paul, beide sind (6) Jahre alt. Leas erster Mann starb bei einem Autounfall. Leas zweiter Mann heißt Michael und ist 44 Jahre alt. Michael hat aus seiner ersten Ehe mit Claire zwei Töchter: Rachel und July. Rachel ist 9 und July 13 Jahre alt. Martha ist 36 Jahre alt und lebt mit Ihrer Partnerin Liss zusammen. Tom ist mit Rebecca (39) verheiratet. Sie haben ein Kind: Toby (8).
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/verwandtschaft.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background="#444433" -->
+<!-- .slide: class="interlude center" -->
+
+## Jeder macht sich ein Bild
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+## Jeder macht sich *sein* Bild!
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+## Vorteile von Zeichnungen & Scribbles
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/advantages-of-sketching.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background="#444433" -->
+<!-- .slide: class="interlude center" -->
+
+## Wo geht die Reise hin?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/sketching-goal.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/design-process.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/audiences.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="interlude center" -->
+
+## <i class='fa fa-paint-brush' aria-hidden='true'></i> Interface Sketching
+Wie funktionieren Wireframes und wozu sind sie gut?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/wireframes-01.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="simple center" -->
+
+## Was leisten Wireframes?
+
+Im Entwicklungsprozess helfen unterschiedliche Arten von Prototypen 
+
+* ein gemeinsames Bild der Software zu schaffen
+* die Software mit Stakeholdern zu testen
+* Varianten zu entwickeln
+* User Journeys durchzuspielen
+* …
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="simple center" -->
+
+## Content
+Was wird auf welchem Screen gezeigt?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/wireframes-02.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="simple center" -->
+
+### Struktur & Layout
+Welche Elemente gibt es und wie sind sie angeordnet?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/wireframes-03.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="simple center" -->
+
+## Informationsarchitektur
+Wie sind die Informationen angeordnet und wie bewege ich mich durch die Anwendung?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/wireframes-04.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="simple center" -->
+
+## Funktion & Verhalten
+Wie arbeitet das Interface und interagiert der Nutzer und wie reagiert die Anwendung?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/wireframes-05.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+## Übung macht den **Meister**
+Warm-up
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="assignment center" -->
+
+## Kreise, Linien und Gitter
+1. Im ersten Schritt zeichnen wir konzentrische Kreise in einem doppelten Koordinatensystem. 
+2. Danach setzen wir jeweils 3 Punkte und verbinden danach die Punkte mit einer Linie. 
+3. In der nächsten Warm-up Aufgabe erzeugen wir ein Gitter: wir setzen wieder 3 Punkte und verbinden diese mit einer geraden. Dann erzeugen wir einen weiteren Punkt und verbinden dann wieder alle Punkte mit Geraden.
+4. Danach versuchen wir parallele Linien zu zeichnen: vertikal, horizontal und diagonal.
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/06-Warming-Up-First-Exercises.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/06-Warm-Up-Straight-Lines.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="assignment center" -->
+
+## Kreise
+1. Wir zeichnen kleine Kreise nebeneinander. Die Größe sollte möglichst konstant sein.
+2. Wieder zeichenen wir Kreise nebeneinaber, aber diesmal erhöhen wir die Größe sukzessiv.
+3. Jetzt zeichnen wir ein paar grooooße Kreise.
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/07-Basic-Shapes-Circles.png" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="assignment center" -->
+
+## <i class='fa fa-baseball-ball' aria-hidden='true'></i> Icons
+
+Zeichnen Sie möglichst schnell und einfach Icons für die folgenden Begriffe/ Dinge/ Konzepte. Zeichnen Sie jedes Icon fünf mal:
+
+* Suche
+* Inhalt teilen
+* WI-FI
+* Kamera
+* Lautstärke
+* Einstellungen
+* Löschen
+* Dokument
+* bearbeiten
+* Position
+* User
+
+Für diese Aufgabe haben Sie **15 Minuten** Zeit.
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="is-conclusion " -->
+
+## Tipps & Tricks
+
+* so einfach wie möglich
+- so komplex wie nötig<!-- .element: class="fragment" -->
+- bevorzugt zweidimensional, eine dreidimensionale Darstellung erhöht die Komplexität zumeist unnötig<!-- .element: class="fragment" -->
+- es ist kein Problem, wenn Sie Elemente übereinander zeichnen.<!-- .element: class="fragment" -->
+- starten Sie dann mit den Zentren der Schwerkraft, also den großen Teilen eines Dings<!-- .element: class="fragment" -->
+
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="#444433" -->
+<!-- .slide: class="interlude center" -->
+
+## Hierarchical Task Analysis
+Was muss denn eigentlich hier gemacht werden?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background="img/5291318582_9c36d829c5_k.jpg" -->
+<!-- .slide: class="image-fullscreen center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="https://i.pinimg.com/originals/e5/0f/40/e50f40c44b1619b41ffd3cecaf8f51d1.jpg" -->
+<!-- .slide: class="image center" -->
+
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="simple center" -->
+
+### Was ist eine Absicht/ Ziel?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="simple center" -->
+
+### Was ist eine Aufgabe?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="simple center" -->
+
+### Was versteht man unter einem Ablauf?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="assignment center" -->
+
+## <i class='fa fa-motorcycle' aria-hidden='true'></i> Beispiele
+
+* Sie wollen an der Kaffeebar einen Kaffee bestellen. Was ist zu tun?
+- Sie wollen eine E-Mail an Ihre Mutter schreiben :). Was ist zu tun?<!-- .element: class="fragment" -->
+- Sie wollen einen Kauf im Netz via Paypal bezahlen. Was ist zu tun? Welche Fälle können auftreten?<!-- .element: class="fragment" -->
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="simple center" -->
+
+## Was wissen wir nach einer HTA?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+## <i class='fa fa-history' aria-hidden='true'></i> Zeitermittlung
+Fließband, REFA, Arbeitswissenschaften und Co.
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="conclusion center" -->
+
+## Was können wir daraus ableiten?
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="#00AD2F" -->
+<!-- .slide: class="interlude center" -->
+
+## User Journey (Map)
+Wie benutzen Menschen unser Produkt?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="statement center" -->
+
+## User Journey
+
+Eine **User Journey** zeigt alle Schritte und Entscheidungspunkte, in zeitlicher Abfolge, die ein Nutzer geht, um ein Ziel mit Hilfe eines (interaktiven) Systems zu erreichen. 
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="statement center" -->
+
+## User Journey Map
+
+Eine **User Journey Map** ist eine Visualisierung einer User Journey. Sie zeigt alle Interaktionen, Entscheidungspunkte der Persona und den jeweiligen Kanal in dem diese stattfinden.
+
+[<i class='fa fa-link' aria-hidden='true'></i>](http://iristongwu.com/travel-mate/)
+[<i class='fa fa-link' aria-hidden='true'></i>](https://uploads-ssl.webflow.com/5c90ba896f6f886d5e9d28d7/5c9dfcf7c1de06c3aca12e7e_FutureCustomerJourneyMap.png)
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="statement center" -->
+
+## User Flow
+
+Als **User Flow** wird der Weg bezeichnet, den eine Persona in **einem** interaktiven System zurück legt, um ein bestimmtes Ziel zu erreichen, bzw. eine Aufgabe abzuschließen.
+
+[<i class='fa fa-link' aria-hidden='true'></i>](https://www.behance.net/gallery/27100529/KRIONI)
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="#4952E1" -->
+<!-- .slide: class="interlude center" -->
+
+## Levels of Prototypes
+Was kann welcher Prototyp?
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/proto-levels-01-block.jpg" -->
+<!-- .slide: class="image-text center" -->
+
+Pen & Paper / Blockdiagramm / Cut Outs
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/proto-levels-02.jpg" -->
+<!-- .slide: class="image-text center" -->
+
+Gray Boxes
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/proto-levels-03.jpg" -->
+<!-- .slide: class="image-text center" -->
+
+High-Fidelity Text
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/proto-levels-04-2.jpg" -->
+<!-- .slide: class="image-text center" -->
+
+High-Fidelity Color
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" data-background-image="img/proto-levels-05.png" -->
+<!-- .slide: class="image-text center" -->
+
+High-Fidelity Interaction
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+## <i class='fa fa-paint-brush' aria-hidden='true'></i> Hands-On
+HTA // Wireframes // User Flow Scribbles
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: data-background="#dd1166" -->
+<!-- .slide: class="interlude center" -->
+
+## Digitalisierung im Amateurfußball
+E-Ink Device für Schiedsrichter // First Ideas
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" -->
+<iframe data-src="https://www.youtube.com/embed/sX7_0zs2qXQ"></iframe><!-- .slide: class="video center" -->
+
+Kindle E-Ink Display
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" -->
+<iframe data-src="https://www.youtube.com/embed/ej-2d2WsGLA"></iframe><!-- .slide: class="video center" -->
+
+7" Waveshare mit ESP8266 E-Ink Display
+
+</script></section><section data-markdown><script type="text/template"> <!-- .element: class="fragment" -->
+<!-- .slide: data-background-color="#000000" -->
+<iframe data-src="https://www.youtube.com/embed/GDjnAzHci-4"></iframe><!-- .slide: class="video center" -->
+
+Was macht ein Schiri? // Kurzinterviews mit zwei Schiedsrichtern
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="assignment center" -->
+
+## <i class='fa fa-tasks' aria-hidden='true'></i> Aufgabe 1: Hierarchical Task Analysis
+
+* Bilden Sie ein Gruppe aus **2** Personen
+* Analysieren und notieren Sie die Aussagen aus dem Video für die drei Phasen **vor dem Spiel**, **während des Spiels** und **nach dem Spiel** um im Nachgang eine HTA durchführen zu können
+* Führen Sie eine HTA durch 
+
+Sie haben **30** Minuten Zeit
+
+</script></section><section data-markdown><script type="text/template"><!-- .element: class="fragment" -->
+<!-- .slide: class="assignment center" -->
+
+## <i class='fa fa-tasks' aria-hidden='true'></i> Aufgabe 2: Wireframes und User Flows entwickeln
+
+* Entwickeln Sie im Team für **zwei** der Aufgaben, die Sie in der HTA ermittelt haben, jeweils **zwei** verschiedene UI Varianten
+* Skizzieren Sie die erforderlichen Wireframes
+* Skizzieren Sie die Funktionsweise und User-Flows
+* Dokumentieren Sie Ihre Ergebnisse mit einem kurzen Video und [<i class='fa fa-link' aria-hidden='true'></i> laden dieses im Ilias hoch](https://ilias.th-koeln.de/ilias.php?ref_id=1350746&ass_id=12520&cmd=showOverview&cmdClass=ilobjexercisegui&cmdNode=b9:mc&baseClass=ilExerciseHandlerGUI)
+
+Sie haben **45** Minuten Zeit
+
+</script></section></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="#9313CE" -->
+<!-- .slide: class="outro center" -->
+
+## Danke für's Mitmachen
+
+<i class='fa fa-twitter' aria-hidden='true'></i> [twitter.com/cnoss](http://twitter.com/cnoss)  
+<i class='fa fa-facebook' aria-hidden='true'></i> [www.facebook.com/cnoss](https://www.facebook.com/cnoss)</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"slide","backgroundTransition":"zoom","center":false}, queryOptions);
+    </script>
+
+    <script src="./_assets/core/reveal-md-add-icons.js"></script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

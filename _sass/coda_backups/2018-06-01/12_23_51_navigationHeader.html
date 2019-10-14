@@ -1,0 +1,10 @@
+{{ $fragments := split .Dir "/" }}
+
+<div class="navigationHeader">
+    <button data-toggle="offCanvas" id="icon-main-menu" class="hamburger hamburger-cancel">
+        <span class="icon"></span>
+    </button>
+    <div class="navigationHeaderText">
+        <a href="{{.Site.BaseURL}}">mi</a><span class="logoSlash">/</span><span class="logoSlug">{{ index ($fragments) 0 }}</span>
+    </div>
+</div>

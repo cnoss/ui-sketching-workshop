@@ -1,0 +1,15 @@
+<!-- Menu -->
+<div class="sidebar">
+
+    {{ partial "system/thLogo/thLogo.html" . }}
+
+    <ul class="sidebarMenu">
+
+				{{ $currentPage := . }} {{ range .Site.Menus.main }}
+				<li>
+				<a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent " main " .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+
+    </ul>
+</div>
