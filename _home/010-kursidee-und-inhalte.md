@@ -11,7 +11,7 @@ Mit Hilfe von einfachen Visualisierungen und UI Sketching sind wir in der Lage I
 - ein gemeinsames Bild für das Team zu entwickeln
 - eine konkrete Diskussionsgrundlage für Gespräche mit den verschiedenen Stakeholdern zu haben
 - Projektbeteiligte und Stakeholder aus einer passiven in eine aktive Haltung zu bringen
-- eine Basis für das spätere Screedesign und die Darstellungslogik zu erhalten
+- eine Basis für das spätere Screendesign und die Darstellungslogik zu erhalten
 - eine Übersicht über die verschiedenen Userflows zu bekommen
 - eine erste Prüfung des Datenmodells zu erhalten
 - uvm :)
