@@ -98,6 +98,9 @@ exclude:
   - CNAME
   - _tools/
   - src/
+
+include:
+  - _assets
   
 collections:
   lehrveranstaltungen:
