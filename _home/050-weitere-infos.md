@@ -5,7 +5,7 @@ additionalClasses: has-top-seperator
 ---
 
 ## Slidedeck
-Hier finden Sie den [Foliensatz zum Workshop](material/slidedeck/mi-emi-ui-sketching.html).
+Hier finden Sie den [Foliensatz zum Workshop](material/slidedeck-2020/mi-emi-ui-sketching.html).
 
 ## Online Training
 Auf Udemy gibt es den Online Kurs [Sketching for UX Designers](https://www.udemy.com/course/sketching-for-ux-designers/) von [Krisztina Szerovay](https://krisztina.szerovay.hu/) in dem noch viele weiterführende Themen behandelt werden.
